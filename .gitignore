@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Arquivos locais de ambiente
+.env
+.venv/
+venv/
+
+# Arquivos temporarios
+.DS_Store
+Thumbs.db
+
+# Datasets brutos e arquivos grandes
+winrar_dataset/
+base_dados/raw/
+*.zip
+
+# Materiais de referencia pesados
+absoleto/
+artigos/
+inspirações - artigos nao publicasos/
+
+# Historico local de ferramentas
+.RData
+.Rhistory
