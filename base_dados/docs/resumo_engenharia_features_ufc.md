@@ -134,3 +134,22 @@ Colunas pos-luta, como `winner`, `finish`, `finish_round`, `finish_round_time` e
 O ponto mais importante e garantir que, para cada luta, as features usadas pelo modelo representem apenas informacoes disponiveis antes daquela luta acontecer.
 
 As estatisticas da luta atual podem ser usadas para atualizar o historico do lutador nas lutas futuras, mas nao podem ser usadas para prever a propria luta em que foram registradas.
+
+## Nova etapa: preparacao dos perfis pre-luta
+
+A `df_historico.csv` e a fonte para construir retratos do desempenho conhecido antes de cada luta. O script `base_dados/preparar_perfis_pre_luta.py` prepara uma tabela derivada com uma linha por participacao do lutador, mantendo identificadores e resultado como metadados, separados das variaveis candidatas a perfil.
+
+Execute a partir da raiz do repositorio:
+
+```bash
+python base_dados/preparar_perfis_pre_luta.py
+```
+
+O script ordena a tabela derivada por lutador, data e identificador da luta. A ordem física das linhas na `df_historico.csv` não é tratada como problema, pois não determina a ordem usada na tabela derivada. Empates de data para o mesmo lutador são sinalizados e precisam de investigação antes de análises de transição entre perfis.
+
+O script gera:
+
+- `base_dados/processed_gold/perfis_lutadores_pre_luta.csv`: metadados e variaveis candidatas para caracterizar perfis;
+- `base_dados/processed_gold/qualidade_perfis_lutadores_pre_luta.csv`: contagens de valores ausentes e alertas de validacao.
+
+As variaveis de resultado e as estatisticas da luta corrente nao entram como candidatas a perfil. Valores ausentes sao preservados, sem imputacao ou exclusao automatica. A selecao definitiva das variaveis, o tratamento de percentuais correlacionados, a filtragem de atletas com pouco historico, a imputacao e a padronizacao devem ser decididos e avaliados antes da clusterizacao, respeitando a separacao temporal entre treino e teste.

@@ -1,0 +1,7 @@
+﻿campo,total_lutadores,preenchidos_antes,adicionados_com_fonte,preenchidos_depois,nulos_depois,cobertura_antes_pct,cobertura_depois_pct
+sexo,2485,586,1637,2223,262,23.58,89.46
+categoria_principal,2485,654,1316,1970,515,26.32,79.28
+date_of_birth,2485,2088,8,2096,389,84.02,84.35
+peso_kg,2485,654,1188,1842,643,26.32,74.12
+height_cm,2485,2116,132,2248,237,85.15,90.46
+reach_cm,2485,492,304,796,1689,19.8,32.03

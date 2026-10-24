@@ -1,0 +1,15 @@
+verificacao,quantidade,detalhe
+valores_ausentes:sig_str_min_antes,2931,16.8% das observações
+valores_ausentes:sig_str_recebidos_min_antes,2931,16.8% das observações
+valores_ausentes:sig_str_acc_antes,2763,15.8% das observações
+valores_ausentes:str_def_antes,2753,15.8% das observações
+valores_ausentes:td_15min_antes,2931,16.8% das observações
+valores_ausentes:td_acc_antes,4191,24.0% das observações
+valores_ausentes:td_def_antes,3888,22.3% das observações
+valores_ausentes:sub_15min_antes,2931,16.8% das observações
+valores_ausentes:ctrl_pct_antes,2931,16.8% das observações
+valores_ausentes:pct_sig_str_distance_antes,2812,16.1% das observações
+valores_ausentes:pct_sig_str_clinch_antes,2812,16.1% das observações
+valores_ausentes:pct_sig_str_ground_antes,2812,16.1% das observações
+ordem_cronologica_no_arquivo,2203,"Lutadores com datas fora de ordem na sequência atual do arquivo. A tabela de perfis será ordenada por data, sem alterar a origem."
+lutas_mesmo_dia_por_lutador,136,Registros do mesmo lutador e data precisam de desempate temporal confiável para análises de evolução.
